@@ -1,0 +1,43 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h1>Форма обратной связи</h1>
+
+<div id="message"></div>
+
+<div class="feedback-data">
+    <form name="feedback">
+        <div>
+            <span>Имя: </span>
+            <input type="text" name="name" value="">
+            <span class="error-text"></span>
+        </div>
+        <div>
+            <span>Телефон: </span>
+            <input type="text" name="phone" value="">
+            <span class="error-text"></span>
+        </div>
+        <div>
+            <span>E-mail: </span>
+            <input type="email" name="email" value="">
+            <span class="error-text"></span>
+        </div>
+        <div>
+            <span>Текст сообщения: </span>
+            <textarea name="message"></textarea>
+            <span class="error-text"></span>
+        </div>
+        <div>
+            <button type="button" onclick="feedbackApp.send()">Отправить сообщение</button>
+        </div>
+    </form>
+</div>
+
+<script src="feedback.js"></script>
+</body>
+</html>
